@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-19T08:52:43 PST" name="Default suite" finished-at="2025-02-19T08:52:54 PST" duration-ms="10907">
+    <groups>
+    </groups>
+    <test started-at="2025-02-19T08:52:43 PST" name="Default test" finished-at="2025-02-19T08:52:54 PST" duration-ms="10907">
+      <class name="BaseClass.pushpendraWindow">
+        <test-method is-config="true" signature="lounchChrome()[pri:0, instance:BaseClass.pushpendraWindow@1c7696c6]" started-at="2025-02-19T08:52:43 PST" name="lounchChrome" finished-at="2025-02-19T08:52:50 PST" duration-ms="7039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchChrome -->
+        <test-method signature="clickOnGoogle()[pri:1, instance:BaseClass.pushpendraWindow@1c7696c6]" started-at="2025-02-19T08:52:50 PST" name="clickOnGoogle" finished-at="2025-02-19T08:52:54 PST" duration-ms="3360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnGoogle -->
+        <test-method signature="switchWindow()[pri:2, instance:BaseClass.pushpendraWindow@1c7696c6]" started-at="2025-02-19T08:52:54 PST" name="switchWindow" finished-at="2025-02-19T08:52:54 PST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchWindow -->
+        <test-method signature="putDetails()[pri:3, instance:BaseClass.pushpendraWindow@1c7696c6]" started-at="2025-02-19T08:52:54 PST" name="putDetails" finished-at="2025-02-19T08:52:54 PST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putDetails -->
+      </class> <!-- BaseClass.pushpendraWindow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
