@@ -87,14 +87,14 @@ public class pushpendraWindow {
 		name.sendKeys("pushpendra");
 	}
 
-//
-//	@AfterTest
-//	public void tearDown()
-//
-//	{
-//
-//		driver.close();
-//
-//	}
+
+	@AfterTest
+	public void tearDown()
+
+	{
+
+		driver.close();
+
+	}
 
 }
