@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BaseClass.pushpendraWindow">
+      <class name="testClass.CreateAccountTest">
         <methods>
-          <include name="switchWindow"/>
-          <include name="lounchChrome"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testGoogleLogin"/>
         </methods>
-      </class> <!-- BaseClass.pushpendraWindow -->
+      </class> <!-- testClass.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
