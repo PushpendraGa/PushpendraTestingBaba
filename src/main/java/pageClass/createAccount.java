@@ -1,34 +1,47 @@
 package pageClass;
 
-
 import BaseClass.pushpendraWindow;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class createAccount extends pushpendraWindow {
 
-    // Constructor
-    public void CreateAccount(WebDriver driver) {
-        this.driver = driver;
-    }
+	// Constructor to initialize elements
+	public createAccount() {
+		this.driver = driver;
+		PageFactory.initElements(driver, this); // ✅ Initialize PageFactory
+	}
 
-    // Google Button पर Click करें
-    public void clickOnGoogle() throws InterruptedException {
-        WebElement googleButton = driver.findElement(By.xpath("//span[text()=\"Google\"]"));
-        googleButton.click();
-        Thread.sleep(3000);
-    }
+	@FindBy(xpath = "//span[text()='Google']")
+	WebElement googleButton;
 
-    // Google Login Window पर Email डालें
-    public void enterEmailInGoogleLogin(String email) throws InterruptedException {
-        switchToWindow(1); // Child Window पर जाएं
+	@FindBy(xpath = "//input[@id='identifierId']")
+	WebElement emailField;
 
-        WebElement emailField = driver.findElement(By.xpath("//input[@id=\"identifierId\"]"));
-        emailField.sendKeys(email);
-        Thread.sleep(2000);
+	@FindBy(xpath = "//input[@id='name']")
+	WebElement name;
 
-        
-    }
+	public void clickOnGoogle() throws InterruptedException {
+
+		googleButton.click();
+		Thread.sleep(3000);
+	}
+
+	public void enterEmailInGoogleLogin(String email) throws InterruptedException {
+
+		switchToWindow(1);
+
+		emailField.sendKeys(email);
+		Thread.sleep(2000);
+		driver.close();
+		Thread.sleep(2000);
+		switchToWindow(0);
+
+		name.sendKeys("pushpendra");
+
+	}
 }
